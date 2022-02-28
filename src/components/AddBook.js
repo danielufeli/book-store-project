@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBookApi } from '../redux/books/books';
 
 const AddBook = ({ categories }) => {
   const [bookState, setBookState] = useState({
     title: '',
-    author: '',
-    category: '',
+    category: ' ',
   });
 
   const onChange = (e) => {
@@ -22,32 +21,29 @@ const AddBook = ({ categories }) => {
 
   const submitBookToStore = (e) => {
     e.preventDefault();
-    const { title, author, category } = bookState;
-    if (title.trim() && author.trim()) {
+    const { title, category } = bookState;
+    if (title.trim()) {
       const newBook = {
-        id: uuidv4(),
+        item_id: uuidv4(),
         title,
-        author,
         category,
       };
+      dispatch(addBookApi(newBook));
       setBookState({
         title: '',
-        author: '',
-        category: '',
+        category: ' ',
       });
-      dispatch(addBook(newBook));
     } else {
       alert('Please Enter a Value');
     }
   };
-  const { title, author, category } = bookState;
+  const { title, category } = bookState;
   return (
     <>
       <div>
         <h1>Add New Book</h1>
         <form>
           <input type="text" name="title" value={title} onChange={onChange} placeholder="Book Title" />
-          <input type="text" name="author" value={author} onChange={onChange} placeholder="Book Author" />
           <select value={category} name="category" onChange={onChange}>
             <option value="Category" disabled>
               Category
