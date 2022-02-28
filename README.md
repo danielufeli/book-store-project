@@ -1,56 +1,51 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Book Store
 
 > Description the project.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript
+- React/Redux
+- CSS
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[GitHubPages Link](#)
 
+[Netlify Link:](#)
+
+[Heroku Link:](#)
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Make sure you have installed nodejs
 
 ### Setup
+- git clone git@github.com:danielufeli/bookstore.git
 
 ### Install
-
+- run npm install
 ### Usage
-
+- run npm start
 ### Run tests
 
-### Deployment
+- run npm test
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Daniel Ufeli**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@danielufeli](https://github.com/danielufeli)
+- Twitter: [@danielufeli](https://twitter.com/danielufeli)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/danielcode)
 
 ## 🤝 Contributing
 
@@ -64,9 +59,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Appreciation to the Create React Team
 
 ## 📝 License
 
