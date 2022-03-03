@@ -5,12 +5,14 @@ import Header from './Header';
 
 const App = () => (
   <>
-    <Header />
-    <div className="container" data-testid="main">
-      <Routes>
-        <Route path="/" element={<Books />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
+    <div className="container">
+      <div className="panel-bg">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </div>
     </div>
   </>
 );

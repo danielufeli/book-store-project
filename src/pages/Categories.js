@@ -3,7 +3,7 @@ import React from 'react';
 const Categories = () => (
   <>
     <div>
-      <h2> Under construction</h2>
+      <h2 className="text-center"> Under construction</h2>
     </div>
   </>
 );

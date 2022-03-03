@@ -10,7 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={configureStore}>
       <BrowserRouter>
-        <div className="container-fluid app">
+        <div className="container-fluid app shadow">
           <App />
         </div>
       </BrowserRouter>
