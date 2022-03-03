@@ -13,6 +13,10 @@ const initialState = [
     id: uuidv4(),
     name: 'Economy',
   },
+  {
+    id: uuidv4(),
+    name: 'Programming',
+  },
 ];
 
 const reducer = (state = initialState, action) => {
