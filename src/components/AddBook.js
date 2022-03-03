@@ -33,8 +33,6 @@ const AddBook = ({ categories }) => {
         title: '',
         category: ' ',
       });
-    } else {
-      alert('Please Enter a Value');
     }
   };
   const { title, category } = bookState;

@@ -3,7 +3,7 @@
 # Book Store
 
 > Description the project.
-
+- The Bookstore is a website similar to the "Awesome Books" website built in the previous module.
 
 ## Built With
 
@@ -13,11 +13,7 @@
 
 ## Live Demo (if available)
 
-[GitHubPages Link](#)
-
-[Netlify Link:](#)
-
-[Heroku Link:](#)
+[Live Link](https://danielufeli.github.io/book-store-project)
 
 ## Getting Started
 
