@@ -10,9 +10,12 @@ const AllBook = () => {
   }, [books]);
   return (
     <>
-      {
+      <div className="books">
+        {
         books.map((book) => <BookItem book={book} key={book.id} />)
       }
+      </div>
+
     </>
   );
 };
