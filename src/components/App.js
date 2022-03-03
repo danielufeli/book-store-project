@@ -6,11 +6,13 @@ import Header from './Header';
 const App = () => (
   <>
     <div className="container">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Books />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
+      <div className="panel-bg">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </div>
     </div>
   </>
 );

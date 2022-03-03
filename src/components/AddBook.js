@@ -33,32 +33,54 @@ const AddBook = ({ categories }) => {
         title: '',
         category: ' ',
       });
-    } else {
-      alert('Please Enter a Value');
     }
   };
   const { title, category } = bookState;
   return (
     <>
-      <div>
-        <h1>Add New Book</h1>
-        <form>
-          <input type="text" name="title" value={title} onChange={onChange} placeholder="Book Title" />
-          <select value={category} name="category" onChange={onChange}>
-            <option value="Category" disabled>
-              Category
-            </option>
-            {
-              categories
-                .map((category) => (
-                  <option value={category.name} key={category.id}>
-                    {category.name}
-                  </option>
-                ))
-            }
+      <div className="form-container row">
+        <h2>Add New Book</h2>
+        <form className="row g-3">
+          <div className="col-md-6">
+            <input
+              type="text"
+              name="title"
+              value={title}
+              onChange={onChange}
+              placeholder="Book Title"
+              className="form-control"
+              required
+            />
+          </div>
 
-          </select>
-          <button type="submit" onClick={submitBookToStore}>Add Book</button>
+          <div className="col-md-4">
+            <select
+              value={category}
+              className="form-select"
+              name="category"
+              onChange={onChange}
+              required
+            >
+              <option value="" disabled hidden>
+                Category
+              </option>
+              {categories.map((category) => (
+                <option value={category.name} key={category.id}>
+                  {category.name}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="col-md-2">
+            <button
+              type="submit"
+              className="btn btn-primary form-control"
+              onClick={submitBookToStore}
+            >
+              Add Book
+            </button>
+          </div>
         </form>
       </div>
     </>

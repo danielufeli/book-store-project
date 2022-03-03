@@ -8,7 +8,7 @@ const Books = () => {
 
   return (
     <>
-      <div>
+      <div className="container">
         <AllBook />
         <AddBook categories={categories} />
       </div>
